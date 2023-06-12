@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+}
+main{
+  
+}
+
+/* navber */
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+a,h2,li{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+   
+}
+.nav-link li{
+    list-style: none;
+    display: inline;
+    font-weight: 700;
+}
+.nav-link a{
+    margin: 0 15px;
+    display: inline-block;
+}
+/* frist sectio */
+.start{
+    font-size: 3vw;
+    font-weight: 900;
+    color: rgba(20, 19, 19, 0.918);
+}
+.pera{
+    font-size: 15px;
+    color: rgb(146, 134, 134);
+}
+ .button{
+    border: none;
+    background-color: tomato;
+    color: wheat;
+    padding: 5px;
+    border-radius: 51px;
+
+}
+.first-div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.text{
+    height: 270px;
+    width: 582px;
+    padding-top: 30px;
+}
+.camera img{
+    height: 314px;
+    width: 440px;
+}
+/* e-com */
+
+.e-com{
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px 20px));
+   grid-column-gap: 20px;
+   background-color: aliceblue;
+   padding: 10px;
+}
+.e-com img{
+ padding: 40px;
+}
+/* popular coll */
+.discr{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgba(26, 24, 24, 0.925);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.last-all-photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.div img{
+   width: 100%;
+}
+.div{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px grey ;
+}
+.popular{
+    background-color: white;
+    padding: 10px;
+}
+.fa-star.rating{
+    color: goldenrod;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+/* another division */
+.last-div{
+    display: flex;
+   justify-content: space-between;
+}
+.last-section{
+    padding-top: 50px;
+}
+.button-last{
+    height: 30px;
+    width: 70px;
+    background-color: tomato;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+ text-align: center;
+}
+.gear img{
+    width: 300px;
+    height: 100%;
+}
+/* footersection */
+.footer{
+    background-color: rgb(1, 1, 31);
+    padding: 30px;
+    margin-top: 80px;
+    height: 100%;
+}
+h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+small{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.finish{
+    text-align: center;
+    padding-left: 10px;
+}
+.font{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.back{
+    background-color: aliceblue;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.fa-square-instagram.foot{
+    color: rgb(97, 12, 12);
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-bottom: 9px;
+   
+}
+.fa-twitter.foot{
+    color: rgb(73, 7, 7);
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-bottom: 9px;
+   
+}
+.fa-square-youtube.foot{
+    color: rgb(73, 7, 7);
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-bottom: 9px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 627px) {
+    header{
+        flex-direction: column;
+    }
+    .first-div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .last-all-photos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .div img{
+        width: 100%;
+    }
+    .last-div{
+        flex-direction:column-reverse ;
+    }
+    .collection {
+        width: 100%;
+    }
+}
